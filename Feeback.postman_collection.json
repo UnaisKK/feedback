@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "056646e7-a0c6-404f-8d7e-29a02b8225d6",
+		"name": "Feeback",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"unais\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllUser",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1bmFpcyIsImlhdCI6MTcwMDMxMjgxMiwiZXhwIjoxNzAwMzE0NjEyfQ.fg1FUtlugiHggY-JCNA3z9FJbfKcf2h0ylYL0bXMhjU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPosts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1bmFpcyIsImlhdCI6MTcwMDMxMjgxMiwiZXhwIjoxNzAwMzE0NjEyfQ.fg1FUtlugiHggY-JCNA3z9FJbfKcf2h0ylYL0bXMhjU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllComments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1bmFpcyIsImlhdCI6MTcwMDMxMjgxMiwiZXhwIjoxNzAwMzE0NjEyfQ.fg1FUtlugiHggY-JCNA3z9FJbfKcf2h0ylYL0bXMhjU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllPost for user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1bmFpcyIsImlhdCI6MTcwMDMxMjgxMiwiZXhwIjoxNzAwMzE0NjEyfQ.fg1FUtlugiHggY-JCNA3z9FJbfKcf2h0ylYL0bXMhjU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/post/Bhisham Kaul",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"post",
+						"Bhisham Kaul"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllComments for a post",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1bmFpcyIsImlhdCI6MTcwMDMxMjgxMiwiZXhwIjoxNzAwMzE0NjEyfQ.fg1FUtlugiHggY-JCNA3z9FJbfKcf2h0ylYL0bXMhjU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/comments/85450",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"comments",
+						"85450"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
